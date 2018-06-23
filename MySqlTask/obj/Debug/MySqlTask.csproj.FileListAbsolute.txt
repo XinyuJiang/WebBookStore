@@ -1,0 +1,12 @@
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\WebBookStore.MySqlTask.dll
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\WebBookStore.MySqlTask.pdb
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\MySql.Data.dll
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\Google.Protobuf.dll
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\MySql.Data.xml
+E:\study\WebBookStore\WebBookStore\MySqlTask\obj\Debug\MySqlTask.csprojAssemblyReference.cache
+E:\study\WebBookStore\WebBookStore\MySqlTask\obj\Debug\MySqlTask.csproj.CoreCompileInputs.cache
+E:\study\WebBookStore\WebBookStore\MySqlTask\obj\Debug\MySqlTask.csproj.CopyComplete
+E:\study\WebBookStore\WebBookStore\MySqlTask\obj\Debug\WebBookStore.MySqlTask.dll
+E:\study\WebBookStore\WebBookStore\MySqlTask\obj\Debug\WebBookStore.MySqlTask.pdb
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\WebBookStore.Entity.dll
+E:\study\WebBookStore\WebBookStore\MySqlTask\bin\Debug\WebBookStore.Entity.pdb

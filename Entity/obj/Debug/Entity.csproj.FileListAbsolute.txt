@@ -1,0 +1,6 @@
+E:\study\WebBookStore\WebBookStore\Entity\bin\Debug\WebBookStore.Entity.dll
+E:\study\WebBookStore\WebBookStore\Entity\bin\Debug\WebBookStore.Entity.pdb
+E:\study\WebBookStore\WebBookStore\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+E:\study\WebBookStore\WebBookStore\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+E:\study\WebBookStore\WebBookStore\Entity\obj\Debug\WebBookStore.Entity.dll
+E:\study\WebBookStore\WebBookStore\Entity\obj\Debug\WebBookStore.Entity.pdb

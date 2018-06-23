@@ -1,0 +1,14 @@
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.InterService.dll
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.InterService.pdb
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.MySqlTask.dll
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\MySql.Data.dll
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\Google.Protobuf.dll
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.MySqlTask.pdb
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\MySql.Data.xml
+E:\study\WebBookStore\WebBookStore\InterService\obj\Debug\InterService.csprojAssemblyReference.cache
+E:\study\WebBookStore\WebBookStore\InterService\obj\Debug\InterService.csproj.CoreCompileInputs.cache
+E:\study\WebBookStore\WebBookStore\InterService\obj\Debug\InterService.csproj.CopyComplete
+E:\study\WebBookStore\WebBookStore\InterService\obj\Debug\WebBookStore.InterService.dll
+E:\study\WebBookStore\WebBookStore\InterService\obj\Debug\WebBookStore.InterService.pdb
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.Entity.dll
+E:\study\WebBookStore\WebBookStore\InterService\bin\Debug\WebBookStore.Entity.pdb
