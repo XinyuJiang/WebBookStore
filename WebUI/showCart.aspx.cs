@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebBookStore.InterService;
 
 namespace WebBookStore.WebUI
 {
@@ -11,7 +12,18 @@ namespace WebBookStore.WebUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "已购买" + Session["bookname"];
+            Cart cart = (Cart)Session["cart"];
+            if (cart != null)
+            {
+                GridView1.DataSource = cart.getItems();
+                GridView1.DataBind();
+                TBx_TotalPrice.Text = (new LInterService(cart)).getTotalPrice().ToString();
+            }
+            else
+            {
+                GridView1.DataSource = null;
+                GridView1.DataBind();
+            }
         }
     }
 }

@@ -105,6 +105,40 @@ namespace WebBookStore.MySqlTask
             return lbooks;
         }
 
+        public IList<Book> getRequiredBookbyName(string name)
+        {
+            createConnection();
+            List<Book> lbooks = new List<Book>();                   //存放图书实体列表
+            string mySql = "select * from book where bookname like '" + name + "%'";
+            MySqlCommand cmd = new MySqlCommand(mySql, myBCon);
+            MySqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Book lbook = new Book();
+                lbook.BookName = Convert.ToString(dr["bookname"]);
+                lbook.Isbn = Convert.ToString(dr["bookid"]);
+                lbook.Price = int.Parse(dr["price"].ToString());
+                lbook.Picture = Convert.ToString(dr["picture"]);
+                lbooks.Add(lbook);
+            }
+            return lbooks;
+        }
+
+        //方法:根据"书名"得到图书信息
+        public Book getBookbyName(string name)
+        {
+            createConnection();
+            string mySql = "select * from book where bookname='" + name + "'";
+            MySqlDataAdapter mda = new MySqlDataAdapter(mySql, myBCon);
+            DataSet ds = new DataSet();
+            mda.Fill(ds, "ONEBOOK");
+            Book book = new Book();
+            book.BookName = ds.Tables["ONEBOOK"].Rows[0]["bookname"].ToString();
+            book.Isbn = ds.Tables["ONEBOOK"].Rows[0]["bookid"].ToString();
+            book.Price = int.Parse(ds.Tables["ONEBOOK"].Rows[0]["price"].ToString());
+            book.Picture = ds.Tables["ONEBOOK"].Rows[0]["picture"].ToString();
+            return book;
+        }
 
     }
 }

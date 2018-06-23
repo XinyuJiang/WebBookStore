@@ -10,7 +10,7 @@
 namespace WebBookStore.WebUI {
     
     
-    public partial class showCart {
+    public partial class browseBookBuy {
         
         /// <summary>
         /// form1 控件。
@@ -31,22 +31,13 @@ namespace WebBookStore.WebUI {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// ImgBtn_ContinueBuy 控件。
+        /// TBx_Quantity 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImgBtn_ContinueBuy;
-        
-        /// <summary>
-        /// GridView1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox TBx_Quantity;
         
         /// <summary>
         /// Label2 控件。
@@ -58,30 +49,12 @@ namespace WebBookStore.WebUI {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TBx_TotalPrice 控件。
+        /// GridView1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBx_TotalPrice;
-        
-        /// <summary>
-        /// Label3 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// ImgBtn_SaveOrder 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImgBtn_SaveOrder;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

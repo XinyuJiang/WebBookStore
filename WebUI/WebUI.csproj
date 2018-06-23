@@ -73,6 +73,7 @@
     <Content Include="bookDb.aspx" />
     <Content Include="bookDb.html" />
     <Content Include="bookWeb.html" />
+    <Content Include="browseBookBuy.aspx" />
     <Content Include="browseBookPaging.aspx" />
     <Content Include="css\bookstore.css" />
     <Content Include="Global.asax" />
@@ -83,6 +84,7 @@
     <Content Include="menu.aspx" />
     <Content Include="register.aspx" />
     <Content Include="register_success.aspx" />
+    <Content Include="searchBook.aspx" />
     <Content Include="showCart.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -93,6 +95,13 @@
     </Compile>
     <Compile Include="bookDb.aspx.designer.cs">
       <DependentUpon>bookDb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="browseBookBuy.aspx.cs">
+      <DependentUpon>browseBookBuy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="browseBookBuy.aspx.designer.cs">
+      <DependentUpon>browseBookBuy.aspx</DependentUpon>
     </Compile>
     <Compile Include="browseBookPaging.aspx.cs">
       <DependentUpon>browseBookPaging.aspx</DependentUpon>
@@ -146,6 +155,13 @@
     </Compile>
     <Compile Include="register_success.aspx.designer.cs">
       <DependentUpon>register_success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="searchBook.aspx.cs">
+      <DependentUpon>searchBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchBook.aspx.designer.cs">
+      <DependentUpon>searchBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="showCart.aspx.cs">
       <DependentUpon>showCart.aspx</DependentUpon>

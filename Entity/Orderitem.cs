@@ -14,11 +14,13 @@ namespace WebBookStore.Entity
 
         public Book Book                              //获取"图书编号"属性,从Book获取
         {
+            set { this.m_book = value; }
             get { return this.m_book; }
         }
 
         public Orders Order                        //获取"订单编号"属性,从Orders获取
         {
+            set { this.m_order = value; }
             get { return this.m_order; }
         }
 

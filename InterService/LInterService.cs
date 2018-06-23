@@ -12,6 +12,13 @@ namespace WebBookStore.InterService
 {
     public class LInterService
     {
+        private Cart cart = null;
+
+        public LInterService(){}
+
+        public LInterService(Cart cart) {
+            this.cart = cart;
+        }
 
         //方法：实现“登录功能”的业务规则
         public string loginBookstore(User user)
@@ -55,6 +62,30 @@ namespace WebBookStore.InterService
         public IList<Book> getBookbyCatalog(string catalogname)
         {
             return (new DBTask()).getBookbyCatalog(catalogname);
+        }
+
+        public IList<Book> getRequiredBookbyName(string name)
+        {
+            return (new DBTask()).getRequiredBookbyName(name);
+        }
+
+        public Cart addToCart(string name, int quantity)
+        {
+            Book book = (new DBTask()).getBookbyName(name);//调用数据访问层犯法获得图书
+
+            Orderitem orderitem = new Orderitem();
+            orderitem.Book = book;
+            orderitem.Quantity = quantity;
+            if (cart == null) { cart = new Cart(); }
+            cart.addBook(orderitem);    //调用购物车模型的addBook方法添加图书到购物车
+            return cart;
+        }
+
+        //方法：实现“计算总价格”功能的业务逻辑
+        public string getTotalPrice()
+        {
+            if (cart == null) return "0.00";
+            else return cart.getTotalPrice().ToString("0.00");
         }
     }
 }

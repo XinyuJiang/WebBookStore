@@ -10,7 +10,23 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text ="您购物车中图书" Font-Bold="true" Font-Names="隶书" Font-Size ="Large"></asp:Label>
+            &nbsp;
+            <asp:ImageButton ID="ImgBtn_ContinueBuy" runat ="server" ImageUrl ="~/image/continue.gif" />
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#FFFFFF" Font-Bold="True" Font-Names="华文仿宋">
+            <Columns>
+                <asp:BoundField DataField="Book.BookName" HeaderText="书                       名" />
+                <asp:BoundField DataField="Book.Price" HeaderText="单    价  ￥" />
+                <asp:BoundField DataField="Quantity" HeaderText="订购数量"/>
+            </Columns>
+            <HeaderStyle BackColor="#FFCC66" Font-Bold="False" />
+        </asp:GridView>
+
+        <br />
+            <asp:Label ID="Label2" runat="server" Text ="消费总金额"  Font-Names="隶书" Font-Size ="Large"></asp:Label>
+            <asp:TextBox ID="TBx_TotalPrice" runat="server" Width="75px"></asp:TextBox>
+            <asp:Label ID="Label3" runat="server" Text ="元"  Font-Names="隶书" Font-Size ="Large"></asp:Label>&nbsp;&nbsp;
+            <asp:ImageButton ID="ImgBtn_SaveOrder" runat="server" ImageUrl="~/image/count.gif" />
         </div>
     </form>
 </body>
